@@ -1,0 +1,38 @@
+[
+    {
+      "name": "ricardo",
+      "lastName": "perez",
+      "email": "ricper@gmail.com",
+      "id": 0
+    },
+    {
+      "name": "antonio",
+      "lastName": "humberto",
+      "email": "antoberto@hotmail.com"
+    },
+    {
+      "name": "genesis",
+      "lastName": "caldera",
+      "email": "caldera@yahoo.com"
+    },
+    {
+      "name": "miguel",
+      "lastName": "cabrera",
+      "email": "mcabre@yahoo.com"
+    },
+    {
+      "name": "yustin",
+      "lastName": "viber",
+      "email": "jv@hotmail.com"
+    },
+    {
+      "name": "diana",
+      "lastName": "perrier",
+      "email": "dia.perrier@yahoo.com"
+    },
+    {
+      "name": "dante",
+      "lastName": "perez",
+      "email": "danterafael@yahoo.com"
+    }
+  ]
