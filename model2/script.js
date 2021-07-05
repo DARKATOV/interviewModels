@@ -14,26 +14,28 @@ searchButton.addEventListener("click", () => {
     console.log(lastNameValue);
     let emailValue = email.value;
     console.log(emailValue);
-    let requestOptions = {
+
+    var requestOptions = {
         method: 'GET',
         redirect: 'follow'
-    };  
-    let getInfo = async function getRepos() {
-    const responseAPI = await fetch(`localhost:3000/${nameValue}`,requestOptions);
-        const data = await responseAPI.json();
-        const namePerson= data.name;
-        console.log(namePerson);
-        const lastNamePerson = data.lastname;
-        console.log(lastNamePerson);
-        const emailPerson = data.email;
-        console.log(email);
-        tableInfo.appendChild.tr;
-        tr.appendChild.td;
-        td.textContent = namePerson;
-        tr.appendChild.td;
-        td.textContent = lastNamePerson;
-        tr.appendChild.td;
-        td.textContent = emailPerson;
-    };
+      };
+      
+      fetch("localhost:3000/users/ricardo", requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            const namePerson= data.name;
+            console.log(namePerson);
+            const lastNamePerson = data.lastname;
+            console.log(lastNamePerson);
+            const emailPerson = data.email;
+            console.log(email);
+            tableInfo.appendChild.tr;
+            tr.appendChild.td;
+            td.textContent = namePerson;
+            tr.appendChild.td;
+            td.textContent = lastNamePerson;
+            tr.appendChild.td;
+            td.textContent = emailPerson;})
+        .catch(error => console.log('error', error));
 });
 
